@@ -196,13 +196,3 @@ Final Result ✅ Web from Figma + data from Laravel
 
 ---
 
-📂 REPO STRUCTURE
-
-```
-Figma-to-Laravel-Integration-Guide/
-├── README.md
-├── export-figma/
-│   ├── index.html
-│   ├── style.css
-│   └── assets/
-└── LICENSE
