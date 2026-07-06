@@ -1,233 +1,208 @@
-# Dari-Desain-ke-Kode-Integrasi-Figma-Laravel
+# From Design to Code: Figma + Laravel Integration
 
-# Panduan Lengkap: Desain Figma ke Backend (Laravel/React)
-
-**Dokumentasi Teknis** | **Platform: Figma & Web** | **Tanggal: 20 Juni 2026**
+Technical Documentation | Platform: Figma & Web | Date: June 20, 2026
 
 ---
 
-## 📋 Daftar Isi
+📋 Table of Contents
 
-- [1. Pendahuluan](#1-pendahuluan)
-- [2. Cara 1: Desain Figma → Web Siap Pakai](#2-cara-1-desain-figma--web-siap-pakai)
-- [3. Cara 2: Desain Figma → Prototype Interaktif + Backend (Cara Canggih)](#3-cara-2-desain-figma--prototype-interaktif--backend-cara-canggih)
-- [4. Rekomendasi untuk Faris](#4-rekomendasi-untuk-faris)
-- [5. Langkah Praktis: Ekspor Figma ke HTML + Sambung Laravel](#5-langkah-praktis-ekspor-figma-ke-html--sambung-laravel)
-- [6. Ringkasan Alur](#6-ringkasan-alur)
-
----
-
-## 1. Pendahuluan
-
-### Apa itu Figma?
-
-Figma adalah alat desain antarmuka (UI/UX) berbasis cloud. Digunakan untuk membuat layout website, aplikasi, dan prototype interaktif.
-
-### Mengapa Figma Penting untuk Developer?
-
-| Keuntungan | Keterangan |
-|------------|-------------|
-| **Kolaborasi Tim** | Desain bisa dilihat dan diedit bareng-bareng |
-| **Ekspor Kode** | Bisa menghasilkan CSS, HTML, bahkan React Components |
-| **Prototype Interaktif** | Bisa simulasi klik, scroll, animasi |
-| **Integrasi Backend** | Bisa dihubungkan ke database lewat Supabase atau API |
+· 1. Introduction
+· 2. Method 1: Figma Design → Ready-to-Use Web
+· 3. Method 2: Figma Design → Interactive Prototype + Backend (Advanced)
+· 4. Recommendation for Faris
+· 5. Practical Steps: Export Figma to HTML + Connect to Laravel
+· 6. Workflow Summary
 
 ---
 
-## 2. Cara 1: Desain Figma → Web Siap Pakai
+1. Introduction
 
-### Alur Umum
+What is Figma?
+
+Figma is a cloud-based UI/UX design tool. It is used to create website layouts, mobile apps, and interactive prototypes.
+
+Why is Figma Important for Developers?
+
+Advantage Description
+Team Collaboration Designs can be viewed and edited together in real-time
+Code Export Can generate CSS, HTML, and even React Components
+Interactive Prototypes Can simulate clicks, scrolling, and animations
+Backend Integration Can connect to databases via Supabase or APIs
+
+---
+
+2. Method 1: Figma Design → Ready-to-Use Web
+
+General Workflow
 
 ```
-
-Desain di Figma → Export ke HTML/CSS → Integrasi Backend
-
+Design in Figma → Export to HTML/CSS → Integrate Backend
 ```
 
-### Langkah-Langkah
+Steps
 
-| Langkah | Yang Dilakukan | Detail |
-|---------|----------------|--------|
-| **1** | Desain di Figma | Buat layout web di Figma (halaman login, dashboard, dll) |
-| **2** | Export Desain | Gunakan plugin Figma (Siter.io, Sloth D2C, atau Figma to HTML) |
-| **3** | Ubah ke Kode | Plugin ubah desain jadi HTML/CSS siap pakai |
-| **4** | Sambung Backend | Tulis kode backend sendiri pakai Laravel/Node.js, lalu sambungkan lewat JavaScript |
+Step Action Details
+1 Design in Figma Create a web layout (login page, dashboard, etc.)
+2 Export Design Use Figma plugins (Siter.io, Sloth D2C, or Figma to HTML)
+3 Convert to Code Plugin converts design into ready-to-use HTML/CSS
+4 Connect Backend Write backend code yourself with Laravel/Node.js, then connect via JavaScript
 
-### Tools Export Figma
+Figma Export Tools
 
-| Nama Plugin | Keterangan |
-|-------------|-------------|
-| **Siter.io** | Export ke website langsung dengan integrasi CMS |
-| **Sloth D2C** | Export ke HTML, CSS, React, Vue, atau Svelte |
-| **Figma to HTML** | Export desain jadi HTML + CSS sederhana |
+Plugin Name Description
+Siter.io Export directly to a website with CMS integration
+Sloth D2C Export to HTML, CSS, React, Vue, or Svelte
+Figma to HTML Export design to simple HTML + CSS
 
 ---
 
-## 3. Cara 2: Desain Figma → Prototype Interaktif + Backend (Cara Canggih)
+3. Method 2: Figma Design → Interactive Prototype + Backend (Advanced)
 
-### Alur
-
-```
-
-Figma Make → Hubungkan Supabase → Backend Aktif
+Workflow
 
 ```
+Figma Make → Connect Supabase → Active Backend
+```
 
-### Langkah-Langkah
+Steps
 
-| Langkah | Yang Dilakukan | Detail |
-|---------|----------------|--------|
-| **1** | Buka Figma Make | Fitur AI di Figma untuk bikin prototipe web |
-| **2** | Minta Backend | Prompt: "Tambahkan autentikasi" atau "Simpan data ke database" |
-| **3** | Konek ke Supabase | Hubungkan akun Supabase ke Figma |
-| **4** | Desain + Backend Aktif | Figma Make bikin prototipe fungsional yang bisa collect input user dan simpan data |
+Step Action Details
+1 Open Figma Make AI-powered feature in Figma to build web prototypes
+2 Request Backend Prompt: "Add authentication" or "Save data to database"
+3 Connect to Supabase Link your Supabase account to Figma
+4 Design + Active Backend Figma Make creates a functional prototype that can collect user input and save data
 
-### Supabase
+Supabase
 
-Supabase adalah platform **Backend-as-a-Service (BaaS)** yang menyediakan:
+Supabase is a Backend-as-a-Service (BaaS) platform that provides:
 
-| Fitur | Fungsi |
-|-------|--------|
-| **Database PostgreSQL** | Penyimpanan data utama |
-| **Authentication** | Login/Register user |
-| **Storage** | Penyimpanan file/gambar |
-| **Real-time** | Update data secara langsung |
+Feature Function
+PostgreSQL Database Primary data storage
+Authentication User login/register
+Storage File/image upload
+Real-time Live data updates
 
 ---
 
-## 4. Rekomendasi untuk Faris
+4. Recommendation for Faris
 
-Berdasarkan skill Faris yang sudah punya **Laravel + React**, saran saya:
+Based on Faris's existing skills in Laravel + React, my recommendation:
 
-| Pilihan | Keterangan |
-|---------|-------------|
-| **Gunakan Cara 1** | Desain di Figma, export ke HTML, sambung ke Laravel sendiri |
-| **Figma hanya untuk Desain** | Servernya tetap kamu pegang penuh pakai Laravel |
-| **Kode HTML export** | Integrasi dengan JavaScript ke endpoint API `http://127.0.0.1:8000/api/...` |
+Option Description
+Use Method 1 Design in Figma, export to HTML, connect to your own Laravel backend
+Figma for Design Only You keep full control of the server using Laravel
+Export HTML Code Integrate with JavaScript to API endpoints http://127.0.0.1:8000/api/...
 
-### Kenapa Cara 1?
+Why Method 1?
 
-| Alasan | Keterangan |
-|--------|-------------|
-| **Kontrol Penuh** | Kamu tetap megang backend sendiri |
-| **Sudah Familiar** | Laravel sudah kamu kuasai dari proyek sebelumnya |
-| **Fleksibel** | Bisa kustomisasi API sesuka hati |
+Reason Description
+Full Control You maintain the backend yourself
+Already Familiar Laravel is already mastered from previous projects
+Flexible Can customize APIs as needed
 
 ---
 
-## 5. Langkah Praktis: Ekspor Figma ke HTML + Sambung Laravel
+5. Practical Steps: Export Figma to HTML + Connect to Laravel
 
-### Langkah 1: Desain di Figma
+Step 1: Design in Figma
 
-Buat desain web sederhana di Figma (misal: halaman login, dashboard, atau tampilan data produk).
+Create a simple web design in Figma (e.g., login page, dashboard, or product data display).
 
-### Langkah 2: Ekspor ke HTML
+Step 2: Export to HTML
 
-Gunakan salah satu plugin (contoh: **Sloth D2C**) untuk export desain menjadi HTML/CSS.
+Use a plugin like Sloth D2C to export the design into HTML/CSS.
 
-### Langkah 3: Simpan File HTML
+Step 3: Save HTML Files
 
-Hasil export biasanya berupa:
+The export result typically looks like:
 
 ```
-
 export-figma/
 ├── index.html
 ├── style.css
 └── assets/
-├── gambar1.png
-└── gambar2.png
-
+    ├── image1.png
+    └── image2.png
 ```
 
-### Langkah 4: Sambung ke Laravel
+Step 4: Connect to Laravel
 
-#### 4.1 Pastikan Backend Jalan
+4.1 Ensure Backend is Running
 
 ```bash
 php artisan serve
 ```
 
-4.2 Edit File HTML
+4.2 Edit HTML File
 
-Tambahkan JavaScript di file index.html untuk ambil data dari Laravel:
+Add JavaScript to index.html to fetch data from Laravel:
 
 ```javascript
-// Contoh menggunakan fetch API
-fetch('http://127.0.0.1:8000/api/nama-model')
+// Example using fetch API
+fetch('http://127.0.0.1:8000/api/model-name')
     .then(response => response.json())
     .then(data => {
         console.log(data);
-        // Tampilkan data ke elemen HTML
+        // Display data to HTML elements
         document.getElementById('data-container').innerHTML = 
-            data.map(item => `<li>${item.nama_model}</li>`).join('');
+            data.map(item => `<li>${item.model_name}</li>`).join('');
     })
     .catch(error => console.error('Error:', error));
 ```
 
-4.3 Simpan & Buka
+4.3 Save & Open
 
-Buka file index.html di browser. Data dari Laravel akan muncul di halaman web!
+Open index.html in your browser. Data from Laravel will appear on the webpage!
 
 ---
 
-6. Ringkasan Alur
+6. Workflow Summary
 
-```mermaid
-flowchart LR
-    A[Desain di Figma] --> B[Export ke HTML/CSS]
-    B --> C[Edit HTML + JavaScript]
-    C --> D[Ambil Data dari API Laravel]
-    D --> E[Tampilkan di Web]
+```
+Design in Figma → Export to HTML/CSS → Edit HTML + JavaScript → Fetch Data from Laravel API → Display on Web
 ```
 
-Versi Teks
+Text Version
 
-Langkah Keterangan
-1 Desain di Figma (layout web)
-2 Export desain ke HTML/CSS (pakai plugin)
-3 Simpan file HTML hasil export
-4 Jalankan backend Laravel (php artisan serve)
-5 Edit HTML + tambahkan JavaScript untuk fetch data dari Laravel
-6 Buka file HTML di browser → data muncul
-
----
-
-📊 Perbandingan Cara 1 vs Cara 2
-
-Aspek Cara 1 (Export HTML) Cara 2 (Figma Make + Supabase)
-Kontrol Backend ✅ Full (kamu pegang) ⚠️ Terbatas (tergantung Supabase)
-Kemudahan ⚠️ Perlu setup manual ✅ Cepat, banyak otomatis
-Cocok untuk Faris (sudah bisa Laravel) Pemula yang mau cepat
-Biaya Gratis (backend di localhost) Gratis (Supabase free tier)
-Skalabilitas ✅ Bisa besar ⚠️ Terbatas free tier
+Step Description
+1 Design in Figma (web layout)
+2 Export design to HTML/CSS (using plugin)
+3 Save exported HTML files
+4 Run Laravel backend (php artisan serve)
+5 Edit HTML + add JavaScript to fetch data from Laravel
+6 Open HTML file in browser → data appears
 
 ---
 
-✅ Ringkasan
+📊 Method 1 vs Method 2 Comparison
 
-Komponen Status
-Figma ✅ Siap pakai (design tool)
-Export HTML ✅ Bisa pakai plugin
-Laravel Backend ✅ Sudah siap dari proyek sebelumnya
-Integrasi API ✅ Bisa pakai JavaScript fetch
-Hasil Akhir ✅ Web dari Figma + data dari Laravel
-
----
-
-Panduan Lengkap: Desain Figma ke Backend (Laravel/React). Disusun untuk keperluan belajar dan portofolio.
-Cocok untuk Faris yang ingin mengintegrasikan desain Figma dengan backend Laravel buatannya sendiri.
+Aspect Method 1 (Export HTML) Method 2 (Figma Make + Supabase)
+Backend Control ✅ Full (you manage it) ⚠️ Limited (depends on Supabase)
+Ease of Use ⚠️ Requires manual setup ✅ Fast, many automations
+Best For Faris (already knows Laravel) Beginners who want speed
+Cost Free (backend on localhost) Free (Supabase free tier)
+Scalability ✅ Can handle large scale ⚠️ Limited by free tier
 
 ---
 
+✅ Summary
 
+Component Status
+Figma ✅ Ready to use (design tool)
+Export HTML ✅ Can use plugins
+Laravel Backend ✅ Already ready from previous projects
+API Integration ✅ Can use JavaScript fetch
+Final Result ✅ Web from Figma + data from Laravel
 
 ---
 
-## ✅ Selesai sayang!
+📂 REPO STRUCTURE
 
-| Status | Keterangan |
-|--------|-------------|
-| ✅ **JELAS & MUDAH DIPAHAMI** | Ada 2 cara, langkah praktis, dan perbandingan |
-| ✅ **PROFESIONAL** | Struktur rapi, siap upload GitHub |
-| ✅ **LENGKAP** | Dari desain Figma sampai sambung ke Laravel |
+```
+Figma-to-Laravel-Integration-Guide/
+├── README.md
+├── export-figma/
+│   ├── index.html
+│   ├── style.css
+│   └── assets/
+└── LICENSE
